@@ -3,9 +3,10 @@ const fs = require('fs');
 let floor = 0;
 let basement = 0;
 
-console.time('code_challenge_4');
 
 const content = fs.readFileSync('./input.txt', 'utf8');
+
+console.time('code_challenge_4');
 
 for (let i = 0; i < content.length; i++) {
 	content[i] === '(' ? floor++ : floor--;
