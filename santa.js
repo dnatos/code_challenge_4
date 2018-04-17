@@ -8,11 +8,7 @@ console.time('code_challenge_4');
 const content = fs.readFileSync('./input.txt', 'utf8');
 
 for (let i = 0; i < content.length; i++) {
-	if(content[i] === "(") {
-		floor++;
-	} else if (content[i] === ")") {
-		floor--;
-	}
+	content[i] === '(' ? floor++ : floor--;
 
 	if(floor === -1 && basement < 1) {
 		console.log('basement position:', i+1);
