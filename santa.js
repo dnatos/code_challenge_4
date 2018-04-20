@@ -16,7 +16,7 @@ try {
     }
   }
 } catch (e) {
-  console.log('Something wrong happend!', e);
+  console.log('Something wrong happened!', e);
 }
 console.log('floor:', floor);
 console.timeEnd('code_challenge_4');
